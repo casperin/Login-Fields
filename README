@@ -1,0 +1,15 @@
+Created by Gorm Casper (gormcasper.com) - v.1.0
+
+Use as you please.
+
+
+This is a method for creating a minimal login form with the following abilities:
+
+  * Labels inside the input fields (as default value)
+  * Shows "password" in the password box and not stars, dots or whatever
+  * Label disappears on focus
+  * Labels are different from whatever is typed into the fields (in the example
+    it's grayed out)
+  * Still allows users without js to login without too much hazzle
+
+

@@ -1,7 +1,15 @@
-input, button { margin: 3px; display: block; font:13px/20px arial,sans; } /* Just for looks really */
+input, button { /* Just for looks really */
+  margin: 3px;
+  display: block;
+  font:13px/20px arial,sans;
+}
 
-input.idleField { color: #888; } /* Looks again - just to gray out the default values */
+input.idleField { /* Looks again - just to gray out the default values */
+  color: #888;
+}
 
-.login_fake { display: none; } /* First we hide the "label" in case the user has disabled javascript */
+.login_fake { /* First we hide the "label" in case the user has disabled javascript */
+  display: none;
+}
 
 
