@@ -18,19 +18,22 @@ $(document).ready(function(){
     $(this).removeClass("idleField").select();
   });
 
-  // when the fake gets focus, remove and show the real password field and give it focus
+  // when the fake gets focus, remove and show the real password field and give
+  // it focus
   $("input.login_fake").focus(function(){
-    $(this).hide().prev().show().focus();
+    $(this).hide().prev().show().removeClass("idleField").focus();
   });
 
-  // on blur of the real password field, if it's empty, hide it and show the fake again
+  // on blur of the real password field, if it's empty, hide it and show the
+  // fake again
   $("input.login_password").blur(function(){
     if (this.value=='') {
       $(this).hide().next().show();
     };
   });
 
-  // in this example this is only really used for login_name, but it checks on blur if it's empty, and if so gives the fields its default value again
+  // in this example this is only really used for login_name, but it checks on
+  // blur if it's empty, and if so gives the fields its default value again
   $("input").blur(function(){
     if (this.value==''){
       $(this).addClass("idleField");
